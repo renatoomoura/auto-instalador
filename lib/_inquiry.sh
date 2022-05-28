@@ -104,10 +104,10 @@ software_update() {
 inquiry_options() {
   
   print_banner
-  printf "${WHITE} 💻 Bem vindo(a) ao instalador Owen Zap, Selecione abaixo a proxima ação!${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Bem vindo(a) ao instalador Vespertineweb-B2Zap, Selecione abaixo a proxima ação!${GRAY_LIGHT}"
   printf "\n\n"
-  printf "   [1] Instalar o OwenZap\n"
-  printf "   [2] Atualizar o OwenZap\n"
+  printf "   [1] Instalar o B2Zap\n"
+  printf "   [2] Atualizar o B2Zap\n"
   printf "\n"
   read -p "> " option
 
@@ -122,5 +122,4 @@ inquiry_options() {
     *) exit ;;
   esac
 }
-
 
