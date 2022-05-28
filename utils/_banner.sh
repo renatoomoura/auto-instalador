@@ -10,7 +10,6 @@
 #   WHITE
 #   CYAN_LIGHT
 #   RED
-#   BLUE
 #   GREEN
 #   YELLOW
 # Arguments:
@@ -22,14 +21,27 @@ print_banner() {
 
   printf "\n\n"
 
-  printf "${BLUE}";
-  printf "                 ████████ ██     ██  ███████  ████    ██  █████████   █████████  ████████       ████████  ████████  ████    ████              \n";
-  printf "                 ██    ██ ██     ██  ██       ██ ██   ██        ███   ██     ██  ██    ██       ██        ██    ██  ██ █    █ ██   \n";
-  printf "                 ██    ██ ██  █  ██  ███████  ██  ██  ██     ███      █████████  ████████       ██        ██    ██  ██  █  █  ██    \n";
-  printf "                 ██    ██ ██ ███ ██  ██       ██   ██ ██  ███         ██     ██  ██             ██        ██    ██  ██   ██   ██ \n";
-  printf "                 ████████  ███ ███   ███████  ██    ████  █████████   ██     ██  ██        ██   ████████  ████████  ██        ██                \n";
+  printf "${GREEN}";
+  printf "                                                     ▄▄█▀▀▀▀▀▀▀█▄▄  \n";
+  printf "                                                   ${GREEN}▄█▀${NC}   ${WHITE}▄▄${NC}      ${GREEN}▀█▄\n";
+  printf "                                                   ${GREEN}█${NC}    ${WHITE}███${NC}         ${GREEN}█\n";
+  printf "                                                   ${GREEN}█${NC}    ${WHITE}██▄         ${GREEN}█${NC}\n";
+  printf "                                                   ${GREEN}█${NC}     ${WHITE}▀██▄${NC} ${WHITE}██${NC}    ${GREEN}█\n";
+  printf "                                                   ${GREEN}█${NC}       ${WHITE}▀███▀${NC}    ${GREEN}█\n";
+  printf "                                                   ${GREEN}▀█▄           ▄█▀\n";
+  printf "                                                    ▄█    ▄▄▄▄█▀▀  \n";
+  printf "                                                    █  ▄█▀        \n";
+  printf "                                                    ▀▀▀▀          \n";
+  printf "${NC}";
+
   printf "\n"
- 
+
+  printf "${GREEN}";
+  printf "██     ██ ██   ██  █████  ████████ ██  ██████ ██   ██ ███████ ████████\n";
+  printf "██     ██ ██   ██ ██   ██    ██    ██ ██      ██  ██  ██         ██   \n";
+  printf "██  █  ██ ███████ ███████    ██    ██ ██      █████   █████      ██   \n";
+  printf "██ ███ ██ ██   ██ ██   ██    ██    ██ ██      ██  ██  ██         ██   \n";
+  printf " ███ ███  ██   ██ ██   ██    ██    ██  ██████ ██   ██ ███████    ██   \n";
   printf "${NC}";
 
   printf "\n"
