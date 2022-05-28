@@ -139,7 +139,7 @@ EOF
 #######################################
 # sets up nginx for frontend
 # Arguments:
-#   None
+# None
 #######################################
 frontend_nginx_setup() {
   print_banner
