@@ -15,8 +15,8 @@ system_create_user() {
   sleep 2
 
   sudo su - root <<EOF
-  useradd -m -p $(openssl passwd -crypt ${mysql_root_password}) -s /bin/bash -G sudo owenzap
-  usermod -aG sudo owenzap
+  useradd -m -p $(openssl passwd -crypt ${mysql_root_password}) -s /bin/bash -G sudo B2Zap
+  usermod -aG sudo B2Zap
 EOF
 
   sleep 2
@@ -29,14 +29,14 @@ EOF
 #######################################
 system_git_clone() {
   print_banner
-  printf "${WHITE} 💻 Fazendo download do código Owen Zap...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Fazendo download do código B2Zap...${GRAY_LIGHT}"
   printf "\n\n"
 
 
   sleep 2
 
-  sudo su - owenzap <<EOF
-  git clone ${link_git}  /home/owenzap/${instancia_add}/
+  sudo su - B2Zap <<EOF
+  git clone ${link_git}  /home/B2Zap/${instancia_add}/
 EOF
 
   sleep 2
@@ -49,7 +49,7 @@ EOF
 #######################################
 system_update() {
   print_banner
-  printf "${WHITE} 💻 Vamos atualizar o sistema Owen Zap...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos atualizar o sistema B2Zap...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -197,8 +197,8 @@ system_pm2_install() {
 
   sudo su - root <<EOF
   npm install -g pm2
-  pm2 startup ubuntu -u owenzap
-  env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u owenzap --hp /home/owenzap/${instancia_add}
+  pm2 startup ubuntu -u B2Zap
+  env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u B2Zap --hp /home/B2Zap/${instancia_add}
 EOF
 
   sleep 2
@@ -299,7 +299,7 @@ system_nginx_conf() {
 
 sudo su - root << EOF
 
-cat > /etc/nginx/conf.d/owenzap.conf << 'END'
+cat > /etc/nginx/conf.d/B2Zap.conf << 'END'
 client_max_body_size 100M;
 END
 
